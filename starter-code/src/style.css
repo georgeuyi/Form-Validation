@@ -1,0 +1,31 @@
+
+body {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 10px;
+  background-image: url(../images/img.png);
+  background-size: cover;
+}
+.container{
+  text-align: center;
+  background-color:#fa5959;
+  width: 600px;
+  border-radius: 20px;
+  height: 300px;
+  padding-top: 20px;
+
+}
+
+input {
+margin-left:200px ;
+}
+
+form {
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.error-box{
+  margin-left: -200px;
+}
