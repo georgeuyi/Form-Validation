@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <title>Validation Form</title>
 </head>
 <body>
-    <form>
-        <div class="container">
-            <div class="namefield">
-                <label for="name">Your Name</label>
-                <input type="text" name="name"><br><br>
-            </div>
-            <div class="emailField">
-                <label for="email">Your Email</label>
-                <input type="text" name="emails"><br><br>
-            </div>
-            <div class="activation">
-                <label for="token">Activation Token</label>
-                    <input type="password" name= "token" style="margin-left: 162px;"><br><br> 
-            </div> 
-            <p>
-                You agree to the <a href="#">privacy policy</a>
-                <input type="checkbox" name="personality" style="margin-left: 62px;">
-            </p> 
-            <div class="error-box">
-                <label for="error"></label>
-                <input type="text" name ="error"><br><br>
-            </div>  
-            <div class="sub-btn">
-                <button type="submit" class="button">Submit</button>
-            </div>
-        </div>
+    <form id="form">
+        <ul style="list-style-type: none">
+            <li class="flex">
+               <label for="name">Your Name <span>*</span></label> 
+               <input type="text" id="name"> 
+            </li>
+            <li class="flex">
+                <label for="name">Your Email <span>*</span></label> 
+               <input type="email" id="email">
+            </li>
+            <li class="flex">
+                <label for="name">Activation Token <span>*</span></label> 
+                <input type="password" id="token">
+            </li>
+            <li id="checkbox">
+                <label for="checkbox">
+                    <h4>You agree to the agree <a href="#">privacy policy</a> <span>*</span> </h4>
+                </label>
+                <input type="checkbox" id="checky">
+            </li>
+            <li id="warninglist">
+                <p id="warning"></p>
+            </li>
+            <li id="btnlist">
+                <button type="submit" id="btn">Submit</button>
+            </li>
+        </ul>
     </form>
+    <script src="./form.js"></script>
 </body>
 </html>
